@@ -5,71 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In 2</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="overflow-x-hidden">
-   <div class="container  mx-auto flex flex-row items-center justify-center relative space-x-0 lg:space-x-4">
-       <div class=" w-full lg:hidden">
-           <img class="for-sm" src="./img/Sign In 2 Image.png">
-       </div>
-       <div class="hidden lg:flex">
-           <img class="for-lg" src="./img/Sign In 2 Image.png">
-       </div>
-       <div class="mt-4 lg:mt-0 px-0 absolute left-12 py-4  lg:right-0 h-auto lg:relative w-4/5 lg:w-1/2 flex flex-col items-center lg:items-start justify-center space-y-4 lg:space-y-8 rounded-lg bg-white opacity-90 lg:opacity-100">
-           <h1 class=" lg:w-96 lg:w-full text-4xl font-bold text-center lg:text-left">Login to your account</h1>
-            <form class="flex flex-col items-center lg:items-start justify-center space-y-8 lg:space-y-6 w-4/5">
-                <div class=" hidden lg:flex  flex flex-col items-start lg:flex-row  lg:items-center justify-between space-y-4 lg:space-y-0 lg:space-x-4">
-                    <p class=" text-sm text-gray-500 cursor-pointer font-semibold">
-                        Don't have an account?
-                    </p>
-                    <p class=" underline text-red-500 cursor-pointer">
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="./img/Sign In 2 Image.png" alt="">
+        </div>
+        <div class="form-container">
+            <h2>
+                Login to your account
+            </h2>
+            <form>
+                <div class="a-tags">
+                    <a href="" class="no-acc">
+                        Don’t have an account?
+                    </a>
+                    <a href="" class="create">
                         Create an account
-                    </p>
+                    </a>
                 </div>
-                <div class="flex flex-col items-start justify-center space-y-4 ">
-                    <label for="email" class="font-semibold text-gray-700">
-                        Email address*
+                <div class="input-container">
+                    <label for="email">
+                        Email Address*
                     </label>
-                    <input class=" px-8 lg:w-96 h-14 text-sm box-border border-gray-300 rounded-lg border-solid border-2 outline-0 hover:border-blue-500" placeholder="Enter email address" type="email">
+                    <input type="text"id="email"placeholder="Enter email address">
                 </div>
-                <div class="flex flex-col items-start justify-center space-y-4 ">
-                    <label for="password" class="font-semibold text-gray-700">
+                <div class="input-container">
+                    <label for="password">
                         Password*
                     </label>
-                    <input class=" px-8 w-90  lg:w-96 h-14 text-sm box-border border-gray-300 rounded-lg border-solid border-2 outline-0 hover:border-blue-500" placeholder="***********" type="password">
+                    <input type="text"id="password"placeholder="**********">
                 </div>
-                <div class=" hidden lg:flex flex-row items-center justify-between space-x-4 lg:space-x-16">
-                    <div class=" hidden lg:flex flex-row items-center justify-between space-x-2">
-                        <input type="checkbox" name="" id="">
-                        <label class="text-gray-500" for="checkbox">Remember me</label>
+                <div class="check-container">
+                    <div class="check">
+                        <input type="checkbox">
+                        <label>
+                            Remember Me
+                        </label>
                     </div>
-                    <p class="text-gray-500 cursor-pointer hover:text-blue-700"> Forgot password?</p>
+                    <a href="" class="forgot">
+                        Forgot Password?
+                    </a>
                 </div>
-                <div class="hidden lg:flex flex-col items-center justify-between w-96">
-                    <button class=" login py-3 px-3  text-white rounded w-1/2 lg:w-full">Login Now</button>
-                </div>
-                <div class="w-60 lg:hidden flex flex-col items-start justify-center space-y-6">
-                    <div class=" flex lg:hidden flex-row items-center space-x-2">
-                        <input type="checkbox" name="" id="">
-                        <label class="text-gray-500" for="checkbox">Remember me</label>
-                    </div>
-                    <div class="w-full flex flex-row items-center justify-center space-x-6">
-                        <button class=" login py-3 px-3  text-white rounded">Login Now</button>
-                        <p class="W-1/2 text-sm text-gray-500 cursor-pointer hover:text-blue-700"> Forgot password?</p>
-                    </div>
-                    <div class="w-96 flex flex-col items-start justify-center space-y-2">
-                        <p class="text-gray-500">
-                            Don't have an account?
-                        </p>
-                        <p class=" underline text-red-500">
-                            Create an account
-                        </p>
-                    </div>
+                <button class="login">
+                    Login Now
+                </button>
+                <div class="a-tags-mobile">
+                    <a href="" class="no-acc">
+                        Don’t have an account?
+                    </a>
+                    <a href="" class="create">
+                        Create an account
+                    </a>
                 </div>
             </form>
-       </div>
-   </div>
-   
+        </div>
+    </div>
 </body>
 </html>
